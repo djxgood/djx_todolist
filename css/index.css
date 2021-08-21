@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+body {
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+    background-color: #cdcdcd;
+    /* background:url(../images/白云图.jpg) #e1e9f6; */
+    /* background: url(../images/樱花4.jpg) #e3d8ce; */
+}
+
+  
+/* 版心 */
+.w {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* 页头 */
+header {
+    height: 48px;
+    background-color: #323232;
+    /* background-color: #558dd0; */
+    /* background-color: #f1a8a4; */
+}
+
+header section h1 {
+    position: relative;
+    font-size: 22px;
+    color: white;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    text-align: center;
+    line-height: 48px;
+    margin: 0;
+}
+
+header section h1 .group {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    margin-top: -17px;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+header section h1 .group ul li {
+    text-indent: 0;
+}
+/* 输入内容 */
+.subject .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 48px;
+    margin: 10px 0;
+}
+
+.content .group {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.content .priority {
+    flex: 1;
+    margin-left: -80px;
+    line-height: 48px;
+    font-size: 16px;
+}
+
+.content .priority em {
+    font-family: 'icomoon';
+    cursor: pointer;
+    color: black;
+    padding-right: 2px;
+}
+
+.content input {
+    flex: 2;
+    height: 30px;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.group {
+    width: 66px;
+}
+
+.group .title {
+    position: relative;
+    width: 66px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.content .group .title i {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.group .title div {
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    margin-left: 1px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: black;
+    transition: all .5;
+}
+
+.group ul {
+    display: none;
+    position: absolute;
+    width: 66px;
+    margin-top: 1px;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    z-index: 99;
+}
+
+.group ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 0.7em;
+    cursor: pointer;
+}
+
+.group ul li:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.group ul li:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.group ul li:hover {
+    background-color: #f5f5f5;
+}
+
+/* 展示内容 */
+.list .doing,
+.list .done {
+    margin: 20px 0;
+}
+
+.list .headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    /* border: 1px solid red; */
+}
+
+.list h2 {
+    font-size: 25px;
+    font-weight: 700;
+    /* border: 1px solid red; */
+    margin: 0;
+    margin-left: 10px;
+}
+
+.list span {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.list .subtitle {
+    position: relative;
+    width: 80px;
+    height: 30px;
+}
+
+.list .subtitle h3 {
+    position: absolute;
+    /* border: 1px solid red; */
+    font-family: 'icomoon';
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.list .subtitle p {
+    display: none;
+    position: absolute;
+    left: 85px;
+}
+
+.list .subtitle:hover p{
+    display: block;
+}
+
+.list span,
+.list .subtitle p {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+    background-color: #e6e6fa;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+}
+
+.list span {
+    font-size: 16px;
+}
+
+.list li {
+    position: relative;
+    height: 30px;
+    margin: 25px 10px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    /* border: 1px solid rgba(0, 0, 0, 0.308); */
+    box-shadow: 0px 9px 12px -12px black;
+}
+
+.list li .prio {
+    position: absolute;
+    top: -16px;
+    left: 10px;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 9px 12px -12px black;
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 14px;
+    color: #f4ea2a;
+}
+
+.list li em {
+    display: inline-block;
+    width: 6px;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.list li input {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.list li p {
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    margin-top: -13px;
+    width: 510px;
+    height: 90%;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+
+.list li i {
+    position: absolute;
+    right: 10px;
+    font-family: 'icomoon';
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(19, 11, 11, 0.479);
+    cursor: pointer;
+}
+
+.list .doing .study em {
+    background-color: #449fdb;
+}
+
+.list .doing .work em {
+    background-color: #e75934;
+}
+
+.list .doing .live em {
+    background-color: #7ab23f;
+}
+
+.list .done em {
+    background-color: rgba(51, 51, 51, 0.342);
+}
+
+.list .done li,
+.list .done li p,
+.list .done li .prio {
+    background: #e6e6e6;
+    color: #676767;
+}
+
+.list .done li input[type='checkbox']:checked {
+    -webkit-appearance: none;
+    border: 1px solid #676767;
+    border-radius: 3px;
+    background: url(../upload/checked4.png) -15px -15px no-repeat;
+}
+/* 页尾 */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding-bottom: 20px;
+}

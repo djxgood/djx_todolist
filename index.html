@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myToDoList</title>
+    <script src="js/jQuery.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <style>
+        /* 字体图标声明 */
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?nwcsdx');
+            src: url('fonts/icomoon.eot?nwcsdx#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?nwcsdx') format('truetype'),
+                url('fonts/icomoon.woff?nwcsdx') format('woff'),
+                url('fonts/icomoon.svg?nwcsdx#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 页头 -->
+    <header>
+        <section class="w">
+            <h1 class="logo">myToDoList
+                <div class="group">
+                    <div class="title"><i>换肤</i>
+                        <div></div>
+                    </div>
+                    <ul>
+                        <li>黑灰</li>
+                        <li>蓝白</li>
+                        <li>粉白</li>
+                    </ul>
+                </div>
+            </h1>
+        </section>
+    </header>
+    <!-- 主体 -->
+    <section class="w subject">
+        <!-- 输入内容框 -->
+        <div class="content">
+            <!-- 分组 -->
+            <div class="group">
+                <div class="title"><i>分组</i>
+                    <div></div>
+                </div>
+                <ul>
+                    <li id="study">学习</li>
+                    <li id="work">工作</li>
+                    <li id="live">生活</li>
+                </ul>
+            </div>
+            <!-- 优先级 -->
+            <div class="priority">
+                <span>优先级：</span><em></em><em></em><em></em><em></em><em></em>
+                <!-- 5个星星 -->
+            </div>
+            <input type="text" class="add" placeholder="添加todo">
+        </div>
+        <!-- 展示内容区域 -->
+        <div class="list">
+            <div class="doing">
+                <article class="headline">
+                    <h2>正在进行</h2><span>30</span>
+                </article>
+                <div class="doingcontent">
+                    <article class="subtitle subtitleStudy">
+                        <h3>
+                            <i style="color: #449fdb;"></i>学习
+                        </h3>
+                        <p>0</p>
+                    </article>
+                    <ul class="study">
+                        <li>
+                            <div class="prio">
+                                
+                                <!-- 星星图标 -->
+                            </div>
+                            <em></em>
+                            <input type="checkbox">
+                            <p>djfg</p>
+                            <!-- 删除 -->
+                            <i></i>
+                        </li>
+                    </ul>
+
+                    <article class="subtitle subtitleWork">
+                        <h3>
+                            <i style="color: #e75934;"></i>工作
+                        </h3>
+                        <p>0</p>
+                    </article>
+                    <ul class="work">
+
+                    </ul>
+
+                    <article class="subtitle subtitleLive">
+                        <h3>
+                            <i style="color: #7ab23f;"></i>生活
+                        </h3>
+                        <p>0</p>
+                    </article>
+                    <ul class="live">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="done">
+                <article class="headline">
+                    <h2>已经完成</h2><span>30</span>
+                </article>
+                <div class="donecontent">
+                    <article class="subtitle subtitleStudy">
+                        <h3>
+                            <i></i>学习
+                        </h3>
+                        <p>0</p>
+                    </article>
+                    <ul class="study">
+
+                    </ul>
+
+                    <article class="subtitle subtitleWork">
+                        <h3>
+                            <i></i>工作
+                        </h3>
+                        <p>0</p>
+                    </article>
+                    <ul class="work">
+
+                    </ul>
+
+                    <article class="subtitle subtitleLive">
+                        <h3>
+                            <i></i>生活
+                        </h3>
+                        <p>0</p>
+                    </article>
+                    <ul class="live">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 页尾 -->
+    <footer class="w">
+        Copyright &copy; 2014 todolist.cn
+    </footer>
+</body>
+
+</html>
